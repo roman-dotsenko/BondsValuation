@@ -66,7 +66,7 @@ namespace BondValuation.Core.Utils.Mappings
                 "Annual" => PaymentFrequency.Annual,
                 "Semi-Annual" => PaymentFrequency.SemiAnnual,
                 "Quarterly" => PaymentFrequency.Quarterly,
-                "None" => PaymentFrequency.Quarterly,
+                "None" => PaymentFrequency.None,
                 _ => throw new ArgumentException($"Unknown payment frequency: {value}")
             };
         }
