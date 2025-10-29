@@ -22,7 +22,7 @@ public class BondValuationFunction
 
     [Function(nameof(BondValuationFunction))]
     [BlobOutput("bonds/output/bonds_valued_{name}", Connection = "BondValuationStorageConnection")]
-    public async Task<string> Run(
+    public Task<string> Run(
     [BlobTrigger("bonds/input/{name}", Connection = "BondValuationStorageConnection")] string inputFileContent)
     {
         _logger.LogInformation($"Processing blob: {inputFileContent} at {DateTime.UtcNow}");
