@@ -1,0 +1,5 @@
+<Solution>
+  <Project Path="BondValuation.Core/BondValuation.Core.csproj" />
+  <Project Path="BondValuation/BondValuation.Functions.csproj" />
+  <Project Path="BondValuationApi/BondValuationApi.csproj" Id="69c45163-3413-4a50-8d3c-c15ce3c04b0f" />
+</Solution>
