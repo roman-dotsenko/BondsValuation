@@ -66,6 +66,6 @@ public class BondValuationFunction
 
         _logger.LogInformation($"Processed {valuationResults.Count} records successfully.");
 
-        return output;
+        return Task.FromResult(output);
     }
 }
